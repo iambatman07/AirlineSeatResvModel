@@ -1,0 +1,34 @@
+<
+{% extends 'layout.html' %}
+
+{% block body %}
+        <div class="jumbotron" id="promo"><img src="{{ url_for('static', filename='images/dubai.jpg')}}" id="dubai">
+        <p class="text-center"> Fly to Dubai @35,990/- only. Book your tickets now .</p>
+        <p></p>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><a class="btn btn-info btn-lg" role="button" href="">Get 25% off </a></div>
+            <div class="col-md-12">
+                <p class="text-right"></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><img src="{{ url_for('static', filename='images/new york.jpg')}}" id="newyork"></div>
+                <div class="col-md-6"><img src="{{ url_for('static', filename='images/germany.jpg')}}" id="germany"></div>
+                <div class="col-md-6">
+                    <p class="text-center"> Fly to New York@74,990/- only. Book your tickets now .</p><a class="btn btn-info btn-lg" role="button" href="promo.html">Get 30% off </a></div>
+                <div class="col-md-6">
+                    <p class="text-center"> Fly to Germay @49,990/- only. Book your tickets now .</p><a class="btn btn-info btn-lg" role="button" href="promo.html">Get 15% off </a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-right"></p>
+            </div>
+            <div class="col-md-6">
+                <p class="text-right">*conditions apply</p>
+            </div>
+        </div>
+    </div>
+{% endblock%}    

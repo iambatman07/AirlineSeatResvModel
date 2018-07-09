@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DeadPool Airlines</title>
+    
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/bootstrap.min.css')}}">
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/styles.css')}}">
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/Pretty-Footer.css')}}">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/Pretty-Registration-Form.css')}}">
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/seatsel.css')}}">
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/Google-Style-Login.css')}}">
+</head>
+<body>
+{% include 'includes/_navbar.html' %}
+ <div class="jumbotron" id="promo">
+<div class="container">
+    {% include 'includes/_messages.html'%}
+   
+{% block body %}{% endblock %}
+</div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+</body>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footer-navigation">
+                <h3><a href="#">Company<span>logo </span></a></h3>
+                <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Flights </a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+                <p
+                class="company-name">Deadpool Airlines© 1929</p>
+            </div>
+            <div class="col-md-4 col-sm-6 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">21 JumpStreet</span> Banglore, Karnataka </p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +91 9600633462</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">support@deadpoolarlines.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-4 footer-about">
+                <h4>About the company</h4>
+                <p>Deadpool was released in 2016. It was revolutionary movie.</p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+</html>

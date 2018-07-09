@@ -1,0 +1,162 @@
+body{
+  font-family:"Raleway", Arial, Helvetica, sans-serif;
+  font-size:20px;
+}
+
+#promo{
+  text-align:center;
+  padding:40px;
+}
+
+body{
+  background:url('/../../static/images/background.jpg') no-repeat;
+  background-size:cover;
+}
+
+#promo.jumbotron{
+  border-radius:10px;
+  padding:50px;
+  max-width:1400PX;
+  background-color:rgba(255,255,255,0.20);
+  margin:0 auto;
+}
+
+#loggy.jumbotron{
+  border-radius:10px;
+  padding:50px;
+  max-width:1400PX;
+  background-color:rgba(255,255,255,0.20);
+  margin:0 auto;
+}
+
+div#livetic.jumbotron{
+  border-radius:10px;
+  padding:50px;
+  max-width:1400PX;
+  background-color:rgba(255,255,255,0.20);
+  margin:0 auto;
+  margin-top:50px;
+}
+
+imagetag{
+  font-size:10px;
+}
+
+#101{
+  padding:25px;
+  text-align:center;
+}
+
+div#promo1.jumbotron{
+  padding:40px;
+  text-align:center;
+  border-radius:20px;
+  max-width:800px;
+  margin:0 auto;
+  background-color:rgba(255,255,255,0.50);
+  margin-top:inherit;
+}
+
+p{
+  text-align:left;
+}
+
+a.btn.btn-info.btn-lg{
+  margin:0 auto;
+}
+
+button.btn.btn-default{
+}
+
+button.btn.btn-primary.btn-lg{
+  border-radius:5px;
+  margin-top:auto;
+}
+
+p.text-right{
+  font-size:smaller;
+}
+
+img{
+  max-width:100%;
+}
+
+img#dubai{
+  max-width:100%;
+  border:5px solid #ddd;
+  border-radius:5px;
+}
+
+img#newyork{
+  max-width:100%;
+  border:5px solid #ddd;
+  border-radius:5px;
+}
+
+img#germany{
+  max-width:100%;
+  border:5px solid #ddd;
+  border-radius:5px;
+}
+
+img#logo{
+  max-height:40px;
+  margin-right:10px;
+  margin-top:-5px;
+  border-radius:60px;
+  display:inline-block;
+}
+
+img#comlogo1{
+  max-height:60px;
+  margin-right:10px;
+  margin-top:-5px;
+  border-radius:1000px;
+  display:inline-block;
+}
+
+.register-form form.custom-form{
+  padding:55px;
+  box-sizing:border-box;
+  background-color:rgba(255,255,255,0.5);
+  box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  font:bold 14px sans-serif;
+  text-align:center;
+  margin:50px;
+  color:#333;
+}
+
+a.btn.btn-primary.btn-lg.submit-button{
+  border-radius:25px;
+}
+s
+div#flights.table-responsive{
+  background:rgba(255,255,255,0.60);
+  border-radius:7px;
+}
+div#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background:#151719; 
+}
+#sidebar ul li {
+color: rgba(230,230,230,0.9);
+padding: 15px 10px;
+border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+#sidebar .toogle-btn {
+  position: absolute;
+  left :230px;
+  top: 20px;
+}
+#sidebar .toggle-btnspan{
+  display:block;
+  width: 30px;
+  height: 5px;
+  background: #151719;
+  margin:5px 0px;
+}
+#sidebar.active {
+  left : 0px;
+}

@@ -1,0 +1,30 @@
+{%extends 'layout.html'%}
+
+{%block body%}
+<h1>List of All Available Flights:</h1>
+
+<hr>
+ <div class="table-responsive" id="flights">
+<table class="table">
+    <tr>
+        <th>Flight Number</th>
+        <th>From</th>
+        <th>Destination</th>
+        <th>Time of Flight</th>
+
+    </tr>
+    {%for booking in bookings%}
+    <tr>
+       <td>{{booking.flightnum}}</td>
+        <td>{{booking.source}}</td>
+        <td>{{booking.destination}}</td>
+        <td>{{booking.timeofflight}}</td>
+       {%if session.logged_in %}
+       <td>  <a href="addbooking/{{booking.bookingid}}"class="btn btn-default pull-right">BookFlight</a></td>
+        {%endif%}
+        
+    </tr>
+    {%endfor%}
+</table>
+</div>
+{% endblock%}
