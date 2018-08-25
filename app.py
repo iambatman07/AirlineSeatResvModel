@@ -146,7 +146,7 @@ def dashboard():
 @app.route('/flights')
 def flights():
     cur=mysql.connection.cursor()
-    result=cur.execute("SELECT DISTINCT(flightnum),source,destination,timeofflight,bookingid FROM bookings GROUP BY flightnum")
+    result=cur.execute("SELECT DISTINCT(flightnum),source,destination,timeofflight,bookingid FROM bookings")
     bookings=cur.fetchall()
     if result>0:
         return render_template('flights.html',bookings=bookings)
