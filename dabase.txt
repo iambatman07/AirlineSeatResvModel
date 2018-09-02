@@ -1,0 +1,44 @@
+CREATE TABLE bookings (
+bookingid VARCHAR(50) NOT NULL , 
+flightnum VARCHAR(50),
+class VARCHAR(1), 
+seatsel BOOLEAN NOT NULL DEFAULT 0,
+source VARCHAR(50),
+destination VARCHAR(50),
+timeofflight VARCHAR(50),
+custid INT(10) NOT NULL REFERENCES customer(custid),
+primary key(bookingid,custid));
+
+CREATE TABLE customer ( 
+custid INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+custname VARCHAR(50),
+email VARCHAR(50), 
+username VARCHAR(50),
+age VARCHAR(5),
+phonenum VARCHAR(12), 
+address VARCHAR(100),
+password VARCHAR(100));
+
+
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('AQR0027155','AQR00',FALSE,'GOA INTERNATIONAL','NEWWARK AIRPORT','E','20:00,11-04-2018',1);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('BQZ1100344','BQZ11',FALSE,'MUMBAI INTERNATIONAL','CALIFORNIA AIRPORT','B','16:00,12-04-2018',1);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('JFJ6543218','JFJ65',FALSE,'DELHI INTERNATIONAL','PUNJAB AIRPORT','E','15:00,15-04-2018',1);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('KSD6548163','KSD65',FALSE,'HYDERABAD INTERNATIONAL','TELANGANA AIRPORT','F','02:00,14-04-2018',1);
+
+
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('KJR6541822','KJR65',FALSE,'JAIPUR INTERNATIONAL','INDIAN AIRPORT','B','14:00,11-04-2018',2);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('NDW1100344','NDW11',FALSE,'PUNE INTERNATIONAL','NORTH AIRPORT','E','18:00,16-04-2018',2);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('EHV1865215','EHV18',FALSE,'CHENNAI INTERNATIONAL','TN AIRPORT','F','07:00,10-04-2018',2);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('GJR6541842','GJR65',FALSE,'GUJARAT INTERNATIONAL','INDIAN AIRPORT','B','15:00,12-04-2018',2);
+
+
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('QRV4563158','QRV45',FALSE,'PANAJI INTERNATIONAL','GOA AIRPORT','E','09:00,1-04-2018',3);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('YDB6541584','YDB65',FALSE,'GUWAHATI INTERNATIONAL','ASSAM AIRPORT','B','16:00,4-04-2018',3);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('BQZ1100344','BQZ11',FALSE,'MUMBAI INTERNATIONAL','CALIFORNIA AIRPORT','F','16:00,8-04-2018',3);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('VQT8421056','VQT84',FALSE,'AHMEDABAD INTERNATIONAL','GUJARAT AIRPORT','E','20:00,22-04-2018',3);
+
+
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('QRV4563158','QRV45',FALSE,'PANAJI INTERNATIONAL','GOA AIRPORT','E','09:00,1-04-2018',4);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('YDB6541584','YDB65',FALSE,'KOCHI INTERNATIONAL','KERELA AIRPORT','B','16:00,23-04-2018',4);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('ASD5932659','ASD59',FALSE,'BHOPAL INTERNATIONAL','BHOPAL AIRPORT','B','16:00,14-04-2018',4);
+INSERT INTO bookings(bookingid,flightnum,seatsel,source,destination,class,timeofflight,custid) VALUES('GDC5659301','GDC56',FALSE,'VARANASI INTERNATIONAL','UP AIRPORT','F','20:00,18-04-2018',4);
